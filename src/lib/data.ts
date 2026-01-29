@@ -79,6 +79,7 @@ export const initialGrievances: Grievance[] = [
     ],
     attachments: [
         {name: "empty-shelves.jpg", url: "https://picsum.photos/seed/301/400/300", hint: "library shelves"},
+        {name: "old-books.jpg", url: "https://picsum.photos/seed/302/400/300", hint: "old books"},
     ],
   },
    {
@@ -101,4 +102,37 @@ export const initialGrievances: Grievance[] = [
         {name: "car-damage.jpg", url: "https://picsum.photos/seed/403/400/300", hint: "damaged tire"},
     ],
   },
+  {
+    id: "GRV-P5T8U9",
+    title: "Infrequent bus service on Route 7",
+    category: "Public Transport",
+    description: "The bus service on Route 7 is extremely infrequent, with buses often arriving late or not at all, causing major disruptions for commuters.",
+    submittedAt: new Date(new Date().setDate(new Date().getDate() - 3)),
+    updatedAt: new Date(new Date().setDate(new Date().getDate() - 1)),
+    status: "In Progress",
+    history: [
+      { status: "Submitted", date: new Date(new Date().setDate(new Date().getDate() - 3)), comments: "Grievance has been submitted." },
+      { status: "In Progress", date: new Date(new Date().setDate(new Date().getDate() - 1)), comments: "Complaint forwarded to the transport authority." },
+    ],
+    attachments: [
+        {name: "bus-stop-crowd.jpg", url: "https://picsum.photos/seed/501/400/300", hint: "crowded bus stop"},
+        {name: "late-bus.jpg", url: "https://picsum.photos/seed/502/400/300", hint: "bus schedule"},
+    ]
+  },
+  {
+    id: "GRV-H3A4L5",
+    title: "Long wait times at City General Hospital",
+    category: "Healthcare",
+    description: "The emergency room at City General Hospital has dangerously long wait times. Patients are waiting hours to be seen for urgent medical issues.",
+    submittedAt: new Date(new Date().setDate(new Date().getDate() - 1)),
+    updatedAt: new Date(new Date().setDate(new Date().getDate() - 1)),
+    status: "Submitted",
+    history: [
+      { status: "Submitted", date: new Date(new Date().setDate(new Date().getDate() - 1)), comments: "Grievance submitted. Awaiting review from hospital administration." },
+    ],
+    attachments: [
+        {name: "hospital-waiting-room.jpg", url: "https://picsum.photos/seed/601/400/300", hint: "hospital waiting room"},
+        {name: "emergency-sign.jpg", url: "https://picsum.photos/seed/602/400/300", hint: "emergency room"},
+    ]
+  }
 ];
