@@ -128,6 +128,7 @@ const GrievanceCard = ({ grievance }: GrievanceCardProps) => {
                         width={200} 
                         height={150}
                         className="rounded-lg object-cover aspect-[4/3] transition-all group-hover:opacity-80"
+                        data-ai-hint={file.hint}
                       />
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Paperclip className="h-4 w-4" />

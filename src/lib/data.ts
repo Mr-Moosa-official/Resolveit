@@ -24,7 +24,7 @@ export type Grievance = {
   submittedAt: Date;
   updatedAt: Date;
   status: GrievanceStatus;
-  attachments?: { name: string; url: string }[];
+  attachments?: { name: string; url: string; hint: string }[];
   resolutionDetails?: string;
   history: GrievanceHistory[];
 };
@@ -45,8 +45,8 @@ export const initialGrievances: Grievance[] = [
       { status: "Resolved", date: new Date(new Date().setDate(new Date().getDate() - 2)), comments: "Work completed by maintenance crew." },
     ],
     attachments: [
-        {name: "photo1.jpg", url: "https://picsum.photos/seed/101/400/300"},
-        {name: "photo2.jpg", url: "https://picsum.photos/seed/102/400/300"},
+        {name: "photo1.jpg", url: "https://picsum.photos/seed/101/400/300", hint: "broken streetlight"},
+        {name: "photo2.jpg", url: "https://picsum.photos/seed/102/400/300", hint: "dark street"},
     ]
   },
   {
@@ -60,6 +60,10 @@ export const initialGrievances: Grievance[] = [
     history: [
       { status: "Submitted", date: new Date(new Date().setDate(new Date().getDate() - 5)), comments: "Grievance submitted." },
       { status: "In Progress", date: new Date(new Date().setDate(new Date().getDate() - 1)), comments: "Forwarded to the sanitation department supervisor for immediate action." },
+    ],
+    attachments: [
+        {name: "overflowing-bin.jpg", url: "https://picsum.photos/seed/201/400/300", hint: "garbage overflow"},
+        {name: "street-view.jpg", url: "https://picsum.photos/seed/202/400/300", hint: "dirty street"},
     ]
   },
   {
@@ -72,6 +76,9 @@ export const initialGrievances: Grievance[] = [
     status: "Submitted",
     history: [
       { status: "Submitted", date: new Date(new Date().setDate(new Date().getDate() - 2)), comments: "Grievance submitted and awaiting review." },
+    ],
+    attachments: [
+        {name: "empty-shelves.jpg", url: "https://picsum.photos/seed/301/400/300", hint: "library shelves"},
     ],
   },
    {
@@ -87,6 +94,11 @@ export const initialGrievances: Grievance[] = [
       { status: "Submitted", date: new Date(new Date().setDate(new Date().getDate() - 20)), comments: "Grievance submitted." },
       { status: "In Progress", date: new Date(new Date().setDate(new Date().getDate() - 18)), comments: "Reviewed by public works department." },
       { status: "Rejected", date: new Date(new Date().setDate(new Date().getDate() - 15)), comments: "Marked as duplicate of an existing report." },
+    ],
+    attachments: [
+        {name: "pothole-close-up.jpg", url: "https://picsum.photos/seed/401/400/300", hint: "road pothole"},
+        {name: "pothole-street.jpg", url: "https://picsum.photos/seed/402/400/300", hint: "street pothole"},
+        {name: "car-damage.jpg", url: "https://picsum.photos/seed/403/400/300", hint: "damaged tire"},
     ],
   },
 ];
