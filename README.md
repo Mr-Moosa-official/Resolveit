@@ -5,7 +5,7 @@ It empowers users with transparency and real-time updates while helping authorit
 
 🚀 What Resolveit Does
 
-Resolveit enables users to:
+Resolveit enables  users to:
 
 Submit grievances with detailed descriptions and attachments
 
