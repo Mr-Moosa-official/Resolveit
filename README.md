@@ -7,7 +7,7 @@ It empowers users with transparency and real-time updates while helping authorit
 
 Resolveit enables  users to:
 
-Submit grievances with detailed descriptions and attachments
+Submit grievances with  detailed descriptions and attachments
 
 Track complaint status in real time
 
